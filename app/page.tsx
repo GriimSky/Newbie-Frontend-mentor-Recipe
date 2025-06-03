@@ -2,102 +2,127 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className="bg-amber-100 flex flex-col items-center justify-center h-auto w-screen mt-0">
+      <div className="p-7 h-auto w-[85%] rounded-2xl bg-white mt-10 text-black">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/Omelette de base.jpg"
+          alt="main"
+          width={1200}
+          height={800}
+          className="w-full rounded-2xl mb-10"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <h1 className="text-4xl mb-10 font-bold text-orange-800">
+          Simple Omelette Receipe
+        </h1>
+        <p className="mb-10">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+
+        <div className="bg-pink-300 pl-10 p-5 w-[95%] rounded-2xl mb-10">
+          <h4 className="mb-5 text-2xl font-bold text-pink-900">
+            Preparation Time
+          </h4>
+          <ul className="list-disc ml-5">
+            <li className="mb-2">
+              <strong>Total:</strong> Approximately 10 minutes
+            </li>
+            <li className="mb-2">
+              <strong>Preparation: </strong> 5 minutes
+            </li>
+            <li>
+              <strong>Cooking: </strong> 5 minutes
+            </li>
+          </ul>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div>
+          <h2 className="text-3xl mb-5 font-bold text-orange-800">
+            Ingredients
+          </h2>
+          <ul className="list-disc ml-5">
+            <li className="mb-2">2-3 large eggs</li>
+            <li className="mb-2">Salt, to taste</li>
+            <li className="mb-2">Pepper, to taste</li>
+            <li className="mb-2">1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </div>
+
+        <div className="border-1 w-[90%] ml-2 border-black rounded-2xl mt-10 mb-10 "></div>
+
+        <div>
+          <h2 className="text-3xl mb-5 font-bold text-orange-800">
+            Instructions
+          </h2>
+
+          <ol className="list-decimal ml-5 text-black">
+            <li className="mb-3">
+              <strong>Beat the eggs: </strong> In a bowl, beat the eggs with a
+              pinch of salt and peper until they are well mixed. You can add a
+              tablespoon of water or milk for a flutter texture.
+            </li>
+            <li className="mb-3">
+              <strong>Heat the pan: </strong>Place a non-stick frying pan over
+              medium heat and add butter or oil.
+            </li>
+            <li className="mb-3">
+              <strong>Cook the omelette: </strong> Once the butter is melted and
+              bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+              coat the surface.
+            </li>
+            <li className="mb-3">
+              <strong>Add fillings (optinal):</strong> When the eggs begin to
+              set the edges but are still slightly runny in the middle, sprinkle
+              your chosen fillings over one half of the omelette.
+            </li>
+            <li className="mb-3">
+              <strong>Fold and serve:</strong> As the omelette continues to
+              cook, carefully lift one edge and fold it oer the fillings. Let it
+              cook for another minute, then slide it onto a plate.{" "}
+            </li>
+            <li>
+              <strong>Enjoy:</strong> Setve hot, with additional salt and pepper
+              if needed.{" "}
+            </li>
+          </ol>
+        </div>
+
+        <div className="border-1 w-[90%] ml-2 border-black rounded-2xl mt-10 mb-10 "></div>
+
+        <div>
+          <h2 className="text-3xl mb-5 font-bold text-orange-800">Nutrition</h2>
+
+          <p className="mb-10">
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
+
+          <div className="flex items-center justify-center gap-50 border-b-1 border-black pb-3 mb-5">
+            <p>Calories</p>
+            <p className="font-bold text-orange-800">277kcal</p>
+          </div>
+
+          <div className="flex items-center justify-center gap-63 border-b-1 border-black pb-3 mb-5">
+            <p>Carbs</p>
+            <p className="font-bold text-orange-800">0g</p>
+          </div>
+
+          <div className="flex items-center justify-center gap-58 border-b-1 border-black pb-3 mb-5">
+            <p>Protein</p>
+            <p className="font-bold text-orange-800">20g</p>
+          </div>
+
+          <div className="flex items-center justify-center gap-64 border-b-1 border-black pb-3 mb-5">
+            <p>Fat</p>
+            <p className="font-bold text-orange-800">22g</p>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
